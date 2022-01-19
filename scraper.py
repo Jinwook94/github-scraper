@@ -38,7 +38,8 @@ for (keyword, category) in keywordsDict.items():
         except Exception as e:
             print("Error: ", end="")
             print(data)
-            print("Error keyword=" + keyword + ", Error repo=" + repo)
+            print("       keyword=" + keyword + ", Error repo=" + repo)
+            print("       url="+url)
             ws1.append([category, keyword, repo, "Error", url])
             continue
 

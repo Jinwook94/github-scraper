@@ -12,7 +12,7 @@ repoDict = {
     'kafdrop': 'obsidiandynamics',
     'sagan': 'spring-io',
     'initializr': 'spring-io',
-    'TelegramBots': 'rubenlagu',
+    'TelegramBots': 'rubenlagus',
     'shopizer': 'shopizer-ecommerce',
     'cwa-server': 'corona-warn-app',
     'BroadleafCommerce': 'BroadleafCommerce',
@@ -43,8 +43,6 @@ repoDict = {
     '2020-seller-lee-company': 'woowacourse-teams',
 }
 
-
-# Search Keywords : Keywords Category
 keywordsDict = {
     # Annotations
     'override': 'Annotation Default',
@@ -75,3 +73,8 @@ keywordsDict = {
     #
 
 }
+
+# Scraping Completion Time Calculation
+estimatedTime = len(repoDict.keys()) * len(keywordsDict.keys()) * 15
+
+
