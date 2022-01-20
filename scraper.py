@@ -11,8 +11,8 @@ from data import keywordsDict, repoDict
 # Excel File Export Config
 wb = Workbook()
 ws1 = wb.active
-ws1.title = "github_scraper"
-ws1.append(["Categories", "Keywords", "Repositories", "Counts", "URLs"])
+ws1.title = "github_scraper" # Name of excel sheet
+ws1.append(["Categories", "Keywords", "Repositories", "Counts", "URLs"])    # First row in excel sheet
 
 # Scrapping
 for (keyword, category) in keywordsDict.items():

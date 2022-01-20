@@ -7,12 +7,13 @@ from openpyxl import Workbook
 # Excel File Export Config
 from data import keywordsDict, repoDict
 
+# Excel File Config
 wb = Workbook()
 ws1 = wb.active
-ws1.title = "urlGenerator"
+ws1.title = "urlBuilder"
 ws1.append(["Keywords", "Repositories", "URLs"])
 
-# Generate URLs
+# URL Building
 for (keyword, category) in keywordsDict.items():
     for (repo, org) in repoDict.items():
         url = 'http://www.github.com/' + org + '/' + repo + '/' + 'search?l=Java&q=' + keyword
@@ -24,7 +25,7 @@ month = str(now.month).zfill(2)
 day = str(now.day).zfill(2)
 hour = str(now.hour).zfill(2)
 minute = str(now.minute).zfill(2)
-filename = "urlGenerator_" + month + day + "_" + hour + minute + ".xlsx"
+filename = "urlBuilder_" + month + day + "_" + hour + minute + ".xlsx"
 
 # Excel File Export
 wb.save(r'files/' + filename)
