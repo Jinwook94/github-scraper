@@ -2,29 +2,29 @@
 keywordsDict = {
     # Annotations
     'override': 'Annotation Default',
-    'suppresswarnings': 'Annotation Default',
-    'safevarargs': 'Annotation Default',
-    'functionalinterface': 'Annotation Default',
-
-    # Exceptions
-
-    # Collections
-    'java.util.ArrayList': 'Collections',
-    'java.util.Vector': 'Collections',
-    'java.util.LinkedList': 'Collections',
-    'java.util.Stack': 'Collections',
-    'java.util.HashSet': 'Collections',
-    'java.util.TreeSet': 'Collections',
-    'java.util.HashMap': 'Collections',
-    'java.util.HashTable': 'Collections',
-    'java.util.TreeMap': 'Collections',
-    'java.util.Properties': 'Collections',
-
-    # Collections Related
-    'java.util.Iterator': 'Collections Related',
-    'java.util.ListIterator': 'Collections Related',
-    'java.util.Enumeration': 'Collections Related',
-    'java.util.Comparator': 'Collections Related',
+    # 'suppresswarnings': 'Annotation Default',
+    # 'safevarargs': 'Annotation Default',
+    # 'functionalinterface': 'Annotation Default',
+    #
+    # # Exceptions
+    #
+    # # Collections
+    # 'java.util.ArrayList': 'Collections',
+    # 'java.util.Vector': 'Collections',
+    # 'java.util.LinkedList': 'Collections',
+    # 'java.util.Stack': 'Collections',
+    # 'java.util.HashSet': 'Collections',
+    # 'java.util.TreeSet': 'Collections',
+    # 'java.util.HashMap': 'Collections',
+    # 'java.util.HashTable': 'Collections',
+    # 'java.util.TreeMap': 'Collections',
+    # 'java.util.Properties': 'Collections',
+    #
+    # # Collections Related
+    # 'java.util.Iterator': 'Collections Related',
+    # 'java.util.ListIterator': 'Collections Related',
+    # 'java.util.Enumeration': 'Collections Related',
+    # 'java.util.Comparator': 'Collections Related',
 
     #
 
