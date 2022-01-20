@@ -24,7 +24,7 @@ for (keyword, category) in keywordsDict.items():
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
         }
 
-        time.sleep(randint(5, 10))  # To avoid HTTP 429: Too Many Requests response
+        time.sleep(randint(3, 6))  # To avoid HTTP 429: Too Many Requests response
 
         data = requests.get(url, headers=headers)
 
