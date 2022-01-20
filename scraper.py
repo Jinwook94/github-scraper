@@ -12,7 +12,7 @@ from data import keywordsDict, repoDict
 wb = Workbook()
 ws1 = wb.active
 ws1.title = "github_scraper" # Name of excel sheet
-ws1.append(["Categories", "Keywords", "Repositories", "Counts", "URLs"])    # First row in excel sheet
+ws1.append(["Category", "Keyword", "Organization", "Repository", "Count", "URL"])    # First row in excel sheet
 
 # Scrapping
 for (keyword, category) in keywordsDict.items():
@@ -24,23 +24,23 @@ for (keyword, category) in keywordsDict.items():
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
         }
 
-        time.sleep(randint(10, 20))  # To avoid HTTP 429: Too Many Requests response
+        time.sleep(randint(5, 10))  # To avoid HTTP 429: Too Many Requests response
 
         data = requests.get(url, headers=headers)
 
         soup = BeautifulSoup(data.text, 'html.parser')
-        counts = soup.select_one(
+        count = soup.select_one(
             '#repo-content-pjax-container > div > div.col-12.col-md-3.float-left.px-md-2 > nav.menu.border.d-none.d-md-block > a.menu-item.selected > span')
 
         try:
-            ws1.append([category, keyword, repo, counts.text, url])
+            ws1.append([category, keyword, org, repo, count.text, url])
             print("<Completed> Keyword: " + keyword + ", Repo: " + repo)
         except Exception as e:
             print("Error: ", end="")
             print(data)
             print("       keyword= " + keyword + ", repo=" + repo)
             print("       url= "+url)
-            ws1.append([category, keyword, repo, "Error", url])
+            ws1.append([category, keyword, org, repo, "Error", url])
             continue
 
 # Excel File Naming
